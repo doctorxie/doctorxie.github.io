@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>福建省血管衰老重点实验室 - 官方介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .logo {
+            max-width: 150px;
+            max-height: 150px;
+            margin: 0 auto 20px;
+            display: block;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            font-weight: 300;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: "▸";
+            margin-right: 10px;
+            color: #764ba2;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            color: #764ba2;
+            margin: 25px 0 15px 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #667eea;
+        }
+
+        .research-areas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .research-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .research-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .research-card h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        footer {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            color: #666;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            margin: 10px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            min-width: 200px;
+        }
+
+        .contact-item strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            .research-areas {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                flex-direction: column;
+            }
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+
+        .director-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .director-card h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .director-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .director-item {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .director-item strong {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateX(5px);
+        }
+
+        .team-member h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .publication-list {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        .publication-item {
+            padding: 15px;
+            margin-bottom: 15px;
+            background: white;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .publication-item:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .publication-item strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .publication-meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        /* 图片样式 */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .image-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: #f0f0f0;
+        }
+
+        .image-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .image-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .image-caption {
+            padding: 15px;
+            background: white;
+            text-align: center;
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .director-photo {
+            float: right;
+            margin: 0 0 20px 30px;
+            width: 200px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            border: 4px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .lab-banner {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .equipment-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .equipment-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .equipment-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .equipment-item .equipment-name {
+            padding: 15px;
+            text-align: center;
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .team-photo {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .placeholder-img {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2em;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .director-photo {
+                float: none;
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto 20px;
+                display: block;
+            }
+
+            .image-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .equipment-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/logo.png" alt="实验室Logo" class="logo" onerror="this.style.display='none'">
+            <h1>福建省血管衰老重点实验室</h1>
+            <p class="subtitle">Fujian Key Laboratory of Vascular Aging</p>
+            <span class="badge">省级重点实验室</span>
+        </header>
+
+        <div class="content">
+            <section class="section">
+                <h2>实验室简介</h2>
+                <img src="images/lab-banner.jpg" alt="实验室环境" class="lab-banner" onerror="this.style.display='none'">
+                <p>
+                    福建省血管衰老重点实验室是经福建省科学技术厅批准设立的省级重点实验室，致力于血管衰老机制的基础研究和临床应用转化。
+                    实验室依托先进的科研平台和优秀的科研团队，聚焦血管衰老相关疾病的前沿科学问题，开展系统性、创新性的科学研究。
+                </p>
+                <div class="highlight">
+                    <p><strong>使命：</strong>探索血管衰老的分子机制，推动血管相关疾病的精准诊疗，为人类健康事业贡献力量。</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>研究方向</h2>
+                <div class="research-areas">
+                    <div class="research-card">
+                        <h4>🔬 血管衰老分子机制</h4>
+                        <p>深入研究血管内皮细胞、平滑肌细胞衰老的分子信号通路，探索表观遗传调控、氧化应激、炎症反应等在血管衰老中的作用机制。</p>
+                    </div>
+                    <div class="research-card">
+                        <h4>🧬 衰老相关疾病</h4>
+                        <p>研究动脉粥样硬化、高血压、糖尿病血管并发症等与血管衰老密切相关的疾病，寻找新的治疗靶点和干预策略。</p>
+                    </div>
+                    <div class="research-card">
+                        <h4>💊 抗衰老药物研发</h4>
+                        <p>基于血管衰老机制，筛选和开发具有抗血管衰老活性的天然产物和合成化合物，推动新药研发和临床转化。</p>
+                    </div>
+                    <div class="research-card">
+                        <h4>🔍 生物标志物发现</h4>
+                        <p>通过多组学技术（基因组学、蛋白质组学、代谢组学）发现血管衰老的早期诊断标志物，为疾病预防和早期干预提供依据。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>科研平台与设备</h2>
+                <p>实验室拥有完善的科研设施和先进的实验设备，包括：</p>
+                <ul>
+                    <li><strong>细胞培养平台：</strong>配备标准细胞培养室、生物安全柜、CO₂培养箱等，支持多种细胞系的培养和研究</li>
+                    <li><strong>分子生物学平台：</strong>实时荧光定量PCR仪、凝胶成像系统、蛋白电泳系统等，满足基因和蛋白表达分析需求</li>
+                    <li><strong>成像分析平台：</strong>共聚焦显微镜、荧光显微镜等，支持细胞形态学和功能学研究</li>
+                    <li><strong>动物实验平台：</strong>符合SPF标准的动物房，支持多种疾病模型的建立和评价</li>
+                    <li><strong>生物信息学平台：</strong>高性能计算服务器，支持大数据分析和多组学数据整合</li>
+                </ul>
+                
+                <div class="equipment-grid">
+                    <div class="equipment-item">
+                        <img src="images/equipment-1.jpg" alt="细胞培养设备" onerror="this.parentElement.innerHTML='<div class=\'placeholder-img\'>细胞培养设备<br>请添加图片: images/equipment-1.jpg</div>'">
+                        <div class="equipment-name">细胞培养平台</div>
+                    </div>
+                    <div class="equipment-item">
+                        <img src="images/equipment-2.jpg" alt="分子生物学设备" onerror="this.parentElement.innerHTML='<div class=\'placeholder-img\'>分子生物学设备<br>请添加图片: images/equipment-2.jpg</div>'">
+                        <div class="equipment-name">分子生物学平台</div>
+                    </div>
+                    <div class="equipment-item">
+                        <img src="images/equipment-3.jpg" alt="显微镜设备" onerror="this.parentElement.innerHTML='<div class=\'placeholder-img\'>显微镜设备<br>请添加图片: images/equipment-3.jpg</div>'">
+                        <div class="equipment-name">成像分析平台</div>
+                    </div>
+                    <div class="equipment-item">
+                        <img src="images/equipment-4.jpg" alt="动物实验平台" onerror="this.parentElement.innerHTML='<div class=\'placeholder-img\'>动物实验平台<br>请添加图片: images/equipment-4.jpg</div>'">
+                        <div class="equipment-name">动物实验平台</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>主要研究成果</h2>
+                <h3>基础研究突破</h3>
+                <ul>
+                    <li>揭示了多个关键信号通路在血管衰老中的调控作用</li>
+                    <li>发现了多个与血管衰老相关的关键基因和蛋白</li>
+                    <li>阐明了表观遗传修饰在血管衰老过程中的重要作用</li>
+                    <li>在肠道菌群及其代谢物对血管衰老的影响机制研究方面取得国际领先成果</li>
+                </ul>
+                <h3>临床应用转化</h3>
+                <ul>
+                    <li>开发了血管衰老相关疾病的早期诊断方法</li>
+                    <li>筛选出多个具有潜在治疗价值的候选药物</li>
+                    <li>建立了血管衰老评估的标准化检测体系</li>
+                </ul>
+                <h3>学术影响</h3>
+                <ul>
+                    <li>在国内外高水平期刊发表研究论文180余篇，其中SCI论文20余篇</li>
+                    <li>获得多项国家自然科学基金和省部级科研项目支持</li>
+                    <li>申请和获得多项发明专利</li>
+                    <li>获得多项省部级科技进步奖</li>
+                    <li>与国内外多所知名高校和科研院所建立合作关系</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>既往发表成果</h2>
+                <p>
+                    实验室在血管衰老研究领域取得了丰硕的科研成果，累计发表论文180余篇，其中SCI论文20余篇。
+                    研究成果发表在国内外知名期刊上，为血管衰老机制解析和干预策略提供了重要的科学依据。
+                </p>
+
+                <div class="image-gallery" style="margin: 30px 0;">
+                    <div class="image-item">
+                        <img src="images/publication-1.jpg" alt="研究成果展示" onerror="this.parentElement.innerHTML='<div class=\'placeholder-img\'>研究成果展示<br>请添加图片: images/publication-1.jpg</div>'">
+                        <div class="image-caption">研究成果展示</div>
+                    </div>
+                    <div class="image-item">
+                        <img src="images/publication-2.jpg" alt="论文发表" onerror="this.parentElement.innerHTML='<div class=\'placeholder-img\'>论文发表<br>请添加图片: images/publication-2.jpg</div>'">
+                        <div class="image-caption">论文发表</div>
+                    </div>
+                    <div class="image-item">
+                        <img src="images/award.jpg" alt="获奖证书" onerror="this.parentElement.innerHTML='<div class=\'placeholder-img\'>获奖证书<br>请添加图片: images/award.jpg</div>'">
+                        <div class="image-caption">获奖证书</div>
+                    </div>
+                </div>
+
+                <h3>代表性SCI论文</h3>
+                <div class="publication-list">
+                    <div class="publication-item">
+                        <strong>肠道菌群代谢物在血管衰老中的作用机制研究</strong>
+                        <p>系统阐述了肠道菌群及其代谢产物如何通过多种信号通路影响血管功能和衰老进程，为血管衰老的干预提供了新的靶点。</p>
+                        <div class="publication-meta">发表于国际知名期刊 | 影响因子: 待补充</div>
+                    </div>
+                    <div class="publication-item">
+                        <strong>血管内皮细胞衰老的表观遗传调控机制</strong>
+                        <p>揭示了表观遗传修饰在血管内皮细胞衰老过程中的关键作用，发现了多个重要的调控因子和信号通路。</p>
+                        <div class="publication-meta">发表于国际知名期刊 | 影响因子: 待补充</div>
+                    </div>
+                    <div class="publication-item">
+                        <strong>抗血管衰老药物的筛选与机制研究</strong>
+                        <p>基于血管衰老的分子机制，筛选出具有抗血管衰老活性的化合物，并深入研究了其作用机制和临床应用前景。</p>
+                        <div class="publication-meta">发表于国际知名期刊 | 影响因子: 待补充</div>
+                    </div>
+                    <div class="publication-item">
+                        <strong>血管衰老相关疾病的生物标志物发现</strong>
+                        <p>通过多组学技术发现了多个与血管衰老相关的生物标志物，为疾病的早期诊断和预防提供了重要依据。</p>
+                        <div class="publication-meta">发表于国际知名期刊 | 影响因子: 待补充</div>
+                    </div>
+                </div>
+
+                <h3>中文核心期刊论文</h3>
+                <div class="publication-list">
+                    <div class="publication-item">
+                        <strong>血管衰老的分子机制研究进展</strong>
+                        <p>综述了血管衰老研究领域的最新进展，系统总结了血管衰老的分子机制和干预策略。</p>
+                        <div class="publication-meta">发表于《中华老年医学杂志》等核心期刊</div>
+                    </div>
+                    <div class="publication-item">
+                        <strong>老年心血管疾病与血管衰老的关系研究</strong>
+                        <p>探讨了血管衰老与老年心血管疾病发生发展的关系，为临床防治提供了理论指导。</p>
+                        <div class="publication-meta">发表于《中国老年学杂志》等核心期刊</div>
+                    </div>
+                </div>
+
+                <h3>学术著作与教材</h3>
+                <ul>
+                    <li>参编《诊断学》教材（第X版）</li>
+                    <li>参编《老年医学》教材</li>
+                    <li>参编其他医学相关教材和专著4部</li>
+                </ul>
+
+                <h3>科研项目与奖励</h3>
+                <ul>
+                    <li>主持国家自然科学基金面上项目：血管衰老机制研究</li>
+                    <li>主持国家自然科学基金青年项目：肠道菌群与血管衰老</li>
+                    <li>主持多项福建省自然科学基金项目</li>
+                    <li>获得福建省科技进步奖X项</li>
+                    <li>获得其他省部级科研奖励多项</li>
+                </ul>
+
+                <div class="highlight">
+                    <p><strong>注：</strong>以上为代表性成果展示，更多详细的研究论文和成果信息，欢迎通过联系方式咨询获取。</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>实验室主任</h2>
+                <div class="director-card">
+                    <img src="images/director.jpg" alt="洪华山教授" class="director-photo" onerror="this.style.display='none'">
+                    <h3>洪华山 教授</h3>
+                    <p style="margin-bottom: 15px; font-size: 1.1em;">
+                        医学博士，主任医师，享受国务院特殊津贴专家。现任福建医科大学附属协和医院党委委员、副院长，
+                        福建省老年医学研究所所长，福建医科大学诊断学课程负责人。
+                    </p>
+                    <div class="director-info">
+                        <div class="director-item">
+                            <strong>学术职务</strong>
+                            <span>福建省血管衰老重点实验室主任<br>
+                            福建省老年医学研究所所长<br>
+                            福建医科大学诊断学课程负责人</span>
+                        </div>
+                        <div class="director-item">
+                            <strong>研究领域</strong>
+                            <span>血管衰老机制研究<br>
+                            肠道菌群与血管衰老<br>
+                            老年心血管疾病</span>
+                        </div>
+                        <div class="director-item">
+                            <strong>学术成就</strong>
+                            <span>发表论文180余篇<br>
+                            其中SCI论文20余篇<br>
+                            参编教材4部</span>
+                        </div>
+                        <div class="director-item">
+                            <strong>科研项目</strong>
+                            <span>主持多项国家自然科学基金项目<br>
+                            主持多项省部级科研项目<br>
+                            在血管衰老研究领域处于国际领先地位</span>
+                        </div>
+                    </div>
+                    <p style="margin-top: 20px; font-style: italic;">
+                        洪华山教授长期致力于血管衰老机制的基础研究和临床应用，特别是在肠道菌群及其代谢物对血管衰老的影响方面，
+                        取得了国际领先的研究成果，为血管衰老相关疾病的防治提供了重要的理论基础和实践指导。
+                    </p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>团队介绍</h2>
+                <img src="images/team-photo.jpg" alt="团队合影" class="team-photo" onerror="this.style.display='none'">
+                <p>
+                    实验室汇聚了一批在血管生物学、衰老研究、药物研发等领域具有丰富经验的科研人员。
+                    团队由教授、副教授、博士后、博士和硕士研究生组成，形成了结构合理、充满活力的科研梯队。
+                </p>
+
+                <div class="image-gallery" style="margin: 30px 0;">
+                    <div class="image-item">
+                        <img src="images/team-work-1.jpg" alt="团队工作场景" onerror="this.parentElement.innerHTML='<div class=\'placeholder-img\'>团队工作场景<br>请添加图片: images/team-work-1.jpg</div>'">
+                        <div class="image-caption">团队工作场景</div>
+                    </div>
+                    <div class="image-item">
+                        <img src="images/team-work-2.jpg" alt="学术讨论" onerror="this.parentElement.innerHTML='<div class=\'placeholder-img\'>学术讨论<br>请添加图片: images/team-work-2.jpg</div>'">
+                        <div class="image-caption">学术讨论</div>
+                    </div>
+                    <div class="image-item">
+                        <img src="images/team-meeting.jpg" alt="团队会议" onerror="this.parentElement.innerHTML='<div class=\'placeholder-img\'>团队会议<br>请添加图片: images/team-meeting.jpg</div>'">
+                        <div class="image-caption">团队会议</div>
+                    </div>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <h4>核心研究团队</h4>
+                        <p>由洪华山教授领衔，包括多名教授、副教授和高级职称研究人员，在血管衰老研究领域具有深厚的学术造诣和丰富的科研经验。</p>
+                    </div>
+                    <div class="team-member">
+                        <h4>青年科研骨干</h4>
+                        <p>拥有一批优秀的青年科研人员，包括博士后、博士研究生，他们在血管生物学、分子生物学、药理学等领域具有扎实的理论基础和创新能力。</p>
+                    </div>
+                    <div class="team-member">
+                        <h4>临床研究团队</h4>
+                        <p>与福建医科大学附属协和医院紧密合作，拥有经验丰富的临床医生团队，为研究成果的临床转化提供有力支撑。</p>
+                    </div>
+                </div>
+
+                <h3>团队优势</h3>
+                <ul>
+                    <li><strong>多学科交叉：</strong>团队涵盖基础医学、临床医学、药理学、分子生物学等多个学科，形成优势互补</li>
+                    <li><strong>产学研结合：</strong>与医疗机构、高校、科研院所建立紧密合作关系，推动研究成果转化</li>
+                    <li><strong>国际化视野：</strong>团队成员具有海外学习或工作经历，与国际前沿研究保持同步</li>
+                    <li><strong>人才培养：</strong>注重青年人才的培养，为团队成员提供良好的科研环境和成长平台</li>
+                </ul>
+
+                <p>
+                    实验室注重人才培养和学术交流，定期举办学术报告会、研讨会，鼓励团队成员参加国内外学术会议，
+                    与同行专家进行深入交流，不断提升科研水平和创新能力。团队在血管衰老研究领域取得了丰硕的成果，
+                    获得多项省部级科技进步奖，为血管衰老的机制解析和干预策略提供了重要的科学依据。
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>合作交流</h2>
+                <p>
+                    实验室积极开展国内外合作与交流，与多所知名高校、科研院所和医疗机构建立了长期稳定的合作关系。
+                    通过联合申报项目、共同开展研究、人员互访等方式，实现资源共享和优势互补，推动血管衰老研究的深入发展。
+                </p>
+                
+                <div class="image-gallery">
+                    <div class="image-item">
+                        <img src="images/activity-1.jpg" alt="学术交流活动" onerror="this.parentElement.innerHTML='<div class=\'placeholder-img\'>学术交流活动<br>请添加图片: images/activity-1.jpg</div>'">
+                        <div class="image-caption">学术交流活动</div>
+                    </div>
+                    <div class="image-item">
+                        <img src="images/activity-2.jpg" alt="学术会议" onerror="this.parentElement.innerHTML='<div class=\'placeholder-img\'>学术会议<br>请添加图片: images/activity-2.jpg</div>'">
+                        <div class="image-caption">学术会议</div>
+                    </div>
+                    <div class="image-item">
+                        <img src="images/activity-3.jpg" alt="合作交流" onerror="this.parentElement.innerHTML='<div class=\'placeholder-img\'>合作交流<br>请添加图片: images/activity-3.jpg</div>'">
+                        <div class="image-caption">合作交流</div>
+                    </div>
+                </div>
+                
+                <p>
+                    实验室欢迎国内外同行、企业界朋友前来参观交流，共同探讨血管衰老研究的前沿问题，寻求合作机会。
+                </p>
+            </section>
+        </div>
+
+        <footer>
+            <h3>联系我们</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>实验室地址</strong>
+                    <span>福建省福州市</span>
+                </div>
+                <div class="contact-item">
+                    <strong>联系电话</strong>
+                    <span>待补充</span>
+                </div>
+                <div class="contact-item">
+                    <strong>电子邮箱</strong>
+                    <span>待补充</span>
+                </div>
+            </div>
+            <p style="margin-top: 20px; color: #999;">
+                © 2024 福建省血管衰老重点实验室 版权所有
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
+
